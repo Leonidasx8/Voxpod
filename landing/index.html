@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutech Academy for AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Nutech Academy for AI</div>
+    <nav>
+      <ul>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#porque">Por qué</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#referidos">Referidos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-primary">Inscribirme ahora</button>
+      <button id="toggle-english" class="btn-secondary">Ver en inglés (referencia)</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <h1>Aprende IA aplicada. Lanza proyectos reales.</h1>
+      <p>Cursos intensivos con mentores expertos. Resultados en semanas.</p>
+      <div class="actions">
+        <a href="#cursos" class="btn-primary">Ver cursos</a>
+        <a href="#contacto" class="btn-secondary">Hablar con un asesor</a>
+      </div>
+      <div class="chips">
+        <div class="chip">Clases en vivo</div>
+        <div class="chip">Proyectos reales</div>
+        <div class="chip">Certificado</div>
+      </div>
+    </section>
+
+    <section id="cursos" class="courses">
+      <h2>Catálogo de Cursos</h2>
+      <div class="filters">
+        <button class="btn-secondary" data-filter="all">Todos</button>
+        <button class="btn-secondary" data-filter="beginner">Principiante</button>
+        <button class="btn-secondary" data-filter="intermediate">Intermedio</button>
+        <button class="btn-secondary" data-filter="advanced">Avanzado</button>
+        <button class="btn-secondary" data-filter="live">En vivo</button>
+        <button class="btn-secondary" data-filter="ondemand">On-demand</button>
+      </div>
+      <div class="course-grid">
+        <div class="course-card card-3d" data-level="beginner" data-mode="live">
+          <h3>Nombre del Curso</h3>
+          <p class="description">Descripción breve del curso (placeholder).</p>
+          <p class="price">Precio: S/ ---</p>
+          <p class="duration">Duración: -- semanas</p>
+          <div class="actions">
+            <a href="#" class="btn-primary">Inscribirme</a>
+            <button class="btn-secondary" data-accordion="eng1">Ver temario</button>
+          </div>
+          <div class="accordion" id="eng1" hidden>
+            <meta name="robots" content="noindex">
+            <p>English syllabus placeholder.</p>
+          </div>
+        </div>
+        <div class="course-card card-3d" data-level="intermediate" data-mode="ondemand">
+          <h3>Nombre del Curso</h3>
+          <p class="description">Descripción breve del curso (placeholder).</p>
+          <p class="price">Precio: S/ ---</p>
+          <p class="duration">Duración: -- semanas</p>
+          <div class="actions">
+            <a href="#" class="btn-primary">Inscribirme</a>
+            <button class="btn-secondary" data-accordion="eng2">Ver temario</button>
+          </div>
+          <div class="accordion" id="eng2" hidden>
+            <meta name="robots" content="noindex">
+            <p>English syllabus placeholder.</p>
+          </div>
+        </div>
+        <div class="course-card card-3d" data-level="advanced" data-mode="live">
+          <h3>Nombre del Curso</h3>
+          <p class="description">Descripción breve del curso (placeholder).</p>
+          <p class="price">Precio: S/ ---</p>
+          <p class="duration">Duración: -- semanas</p>
+          <div class="actions">
+            <a href="#" class="btn-primary">Inscribirme</a>
+            <button class="btn-secondary" data-accordion="eng3">Ver temario</button>
+          </div>
+          <div class="accordion" id="eng3" hidden>
+            <meta name="robots" content="noindex">
+            <p>English syllabus placeholder.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="porque" class="why">
+      <h2>Por qué Nutech</h2>
+      <ul>
+        <li>Aprendizaje práctico en casos de negocio.</li>
+        <li>Mentores expertos y feedback real.</li>
+        <li>Currícula al día y certificado verificable.</li>
+        <li>Portafolio listo para empleo/consultoría.</li>
+      </ul>
+    </section>
+
+    <section id="testimonios" class="testimonials">
+      <h2>Testimonios</h2>
+      <div class="card-3d">
+        <p>“Testimonio corto de un alumno.”</p>
+        <p><strong>Rol, Empresa</strong></p>
+      </div>
+      <div class="card-3d">
+        <p>“Otro testimonio corto.”</p>
+        <p><strong>Rol, Empresa</strong></p>
+      </div>
+    </section>
+
+    <section id="garantias" class="guarantees">
+      <h2>Garantías y Pago</h2>
+      <p>Información sobre reembolsos y políticas (placeholder).</p>
+      <p>Logos de medios de pago (placeholder).</p>
+    </section>
+
+    <section id="referidos" class="referrals">
+      <h2>Gana S/ 500 por cada 4 alumnos referidos</h2>
+      <div class="steps">
+        <div class="card-3d">
+          <h3>1. Regístrate y recibe tu enlace.</h3>
+        </div>
+        <div class="card-3d">
+          <h3>2. Comparte y sigue tu panel.</h3>
+        </div>
+        <div class="card-3d">
+          <h3>3. Cobra S/ 500 cuando 4 alumnos paguen completo.</h3>
+        </div>
+      </div>
+      <form id="referral-form">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <button type="submit">Quiero ser afiliado</button>
+      </form>
+      <p class="terms">Términos rápidos: antifraude, validación, pago hasta 7 días hábiles.</p>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="question" data-accordion="faq1">¿Modalidad de los cursos?</div>
+      <div class="answer" id="faq1" hidden>Respuesta placeholder sobre modalidad.</div>
+      <div class="question" data-accordion="faq2">¿Requisitos?</div>
+      <div class="answer" id="faq2" hidden>Respuesta placeholder sobre requisitos.</div>
+      <div class="question" data-accordion="faq3">¿Certificado?</div>
+      <div class="answer" id="faq3" hidden>Respuesta placeholder sobre certificado.</div>
+      <div class="question" data-accordion="faq4">¿Inscripción?</div>
+      <div class="answer" id="faq4" hidden>Respuesta placeholder sobre inscripción.</div>
+      <div class="question" data-accordion="faq5">¿Pagos?</div>
+      <div class="answer" id="faq5" hidden>Respuesta placeholder sobre pagos.</div>
+      <div class="question" data-accordion="faq6">¿Reembolsos?</div>
+      <div class="answer" id="faq6" hidden>Respuesta placeholder sobre reembolsos.</div>
+      <div class="question" data-accordion="faq7">¿Referidos?</div>
+      <div class="answer" id="faq7" hidden>Respuesta placeholder sobre referidos.</div>
+    </section>
+
+    <section id="cta-final" class="cta-final">
+      <h2>Comienza hoy. Tu proyecto de IA te espera.</h2>
+      <button class="btn-primary">Inscribirme ahora</button>
+      <form id="lead-form">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contacto" class="footer">
+    <p>Contacto: info@nutech.ai | Redes (placeholders)</p>
+    <p>Nota: El inglés se muestra solo como referencia.</p>
+  </footer>
+
+  <div id="english-modal" class="modal" hidden>
+    <meta name="robots" content="noindex">
+    <div class="modal-content">
+      <button class="close-modal">&times;</button>
+      <p>English content placeholder.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
